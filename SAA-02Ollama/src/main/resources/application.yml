@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  servlet:
+    encoding:
+      ennable: true
+      charset: UTF-8
+      force: true
+
+spring:
+  application:
+    name: SAA-02ollama
+  ai:
+    dashscope:
+      api-key: ${aliQwen-api}
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen3:14b
